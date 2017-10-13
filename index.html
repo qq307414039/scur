@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="css/scur.css">
+</head>
+<body>
+
+<div class="scur-container">
+    <section class="navigation">
+        <div class="sticky-wrapper">
+            <ul>
+                <li class="active"><a href="javascript:;">商品详情</a></li>
+                <li><a href="javascript:;">商家介绍</a></li>
+                <li><a href="javascript:;">商家位置</a></li>
+                <li><a href="javascript:;">消费评价</a></li>
+            </ul>
+            <div class="buy-now"><a href="javascript:;">立即购买</a></div>
+        </div>
+    </section>
+    <section class="target-wrapper">
+        <div class="scroll-part">
+            <h3 class="part-title">商品详情</h3>
+            <div class="part-main">
+                balabala...
+            </div>
+        </div>
+        <div class="scroll-part">
+            <h3 class="part-title">商家介绍</h3>
+            <div class="part-main">
+                balabala...
+            </div>
+        </div>
+        <div class="scroll-part">
+            <h3 class="part-title">商家位置</h3>
+            <div class="part-main">
+                balabala...
+            </div>
+        </div>
+        <div class="scroll-part">
+            <h3 class="part-title">消费评价</h3>
+            <div class="part-main">
+                balabala...
+            </div>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/scur.js"></script>
+<script type="text/javascript">
+    scur.scroll({
+        tabNav: '.sticky-wrapper',
+        activeClass: 'active',
+        fixedClass: 'fixedTop',
+        targetArr: '.scroll-part'
+    });
+</script>
+</body>
+</html>
